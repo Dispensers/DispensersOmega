@@ -389,13 +389,13 @@ body {
 	grid-column:cIDoorDemo-s/cIDoorDemo-e;
 	display:grid;
 	grid-template-rows:
-		[rDemoDoor-s rDemoLED-s]
+		[rDemoDoor-s]
 		1fr
 		[rIHighlighter-2-top-s]
 		1fr
 		[rIHighlighter-2-top-e rIHighlighter-2-lr-s]
 		1fr
-		[rDemoLED-e rDemoCDemo-s]
+		[rDemoCDemo-s]
 		7fr
 		[rDemoCDemo-e]
 		1fr
@@ -482,10 +482,12 @@ body {
 		[cDemoCDispense-3-e cDemoSSolution-s]
 		4fr
 		[cDemoSSolution-e]
-		6fr
-		[cDemoDoorPanel-e cDemoCSolution-e cDemoCBack-e cDemoLED-s]
+		1fr
+		[cDemoCrossTick-s]
+		5fr
+		[cDemoDoorPanel-e cDemoCSolution-e cDemoCBack-e cDemoCrossTick-e]
 		3fr
-		[cDemoLED-e cDemoDoor-e];
+		[cDemoDoor-e];
 }
 
 #demoCDemo {
@@ -503,8 +505,7 @@ body {
 #iHighlighter-2-left {grid-row:rIHighlighter-2-lr-s/rIHighlighter-2-lr-e; grid-column:cIHighlighter-2-left-s/cIHighlighter-2-left-e;}
 #iHighlighter-2-right {grid-row:rIHighlighter-2-lr-s/rIHighlighter-2-lr-e; grid-column:cIHighlighter-2-right-s/cIHighlighter-2-right-e;}
 
-#demoLEDGreen {display:none; grid-row:rDemoLED-s/rDemoLED-e; grid-column:cDemoLED-s/cDemoLED-e;}
-#demoLEDRed {display:none; grid-row:rDemoLED-s/rDemoLED-e; grid-column:cDemoLED-s/cDemoLED-e;}
+#demoCrossTick {display:none; grid-row:rDemoCDemo-s/rDemoCDemo-e; grid-column:cDemoCrossTick-s/cDemoCrossTick-e;}
 
 #demoCInformation {grid-row:rDemoCTop-s/rDemoCTop-e; grid-column:cDemoCInformation-s/cDemoCInformation-e;}
 #demoCHint {grid-row:rDemoCTop-s/rDemoCTop-e; grid-column:cDemoCHint-s/cDemoCHint-e;}
@@ -632,7 +633,11 @@ body {
 	position:absolute;
 	grid-template-columns:
 		[cDoor-s]
-		3fr
+		1fr
+		[cHighlighter-3-tb-s cHighlighter-3-left-s]
+		1fr
+		[cHighlighter-3-left-e]
+		1fr
 		[cPanel-s cDispensers-hn-s cCInformation-s cCReset-s]
 		5fr
 		[cCDispense-41-s]
@@ -650,9 +655,9 @@ body {
 		4fr
 		[cCInformation-e cRing-s cCDispense-21-s]
 		1fr
-		[cCDispense-31-e cCDispense-42-s]
+		[cCDispense-31-e cCDispense-42-s cHighlighter-3-right-s]
 		1fr
-		[cCBack-s]
+		[cHighlighter-3-tb-e cHighlighter-3-right-e cCBack-s]
 		3fr
 		[cCHint-s]
 		2fr
@@ -679,11 +684,11 @@ body {
 		1fr
 		[cCDispense-33-e]
 		5fr
-		[cCDispense-44-e]
+		[cCDispense-44-e cCrossTick-s]
 		5fr
-		[cPanel-e cDispensers-hn-e cCSolution-e cCBack-e cLED-s]
+		[cPanel-e cDispensers-hn-e cCSolution-e cCBack-e cCrossTick-e]
 		3fr
-		[cLED-e cDoor-e];
+		[cDoor-e];
 }
 
 /* #spotDispense-33 {display:none; grid-row:rSpotDispense-s/rSpotDispense-e; grid-column:cSpotDispense-33-s/cSpotDispense-33-e;} */
@@ -694,8 +699,7 @@ body {
 	grid-column:cPuzzleName-s/cPuzzleName-e;
 }
 
-#LEDGreen {display:none; grid-row:rLED-s/rLED-e; grid-column:cLED-s/cLED-e;}
-#LEDRed {display:none; grid-row:rLED-s/rLED-e; grid-column:cLED-s/cLED-e;}
+#CrossTick {display:none; grid-row:rPuzzleName-s/rPuzzleName-e; grid-column:cCrossTick-s/cCrossTick-e;}
 
 #cInformation {grid-row:rCTop-s/rCTop-e; grid-column:cCInformation-s/cCInformation-e;}
 #cHint {grid-row:rCTop-s/rCTop-e; grid-column:cCHint-s/cCHint-e;}
@@ -704,6 +708,11 @@ body {
 #cBack {grid-row:rCBottom-s/rCBottom-e; grid-column:cCBack-s/cCBack-e;}
 
 #sInformation {display:none; grid-row:rSInformation-s/rSInformation-e; grid-column:cSInformation-s/cSInformation-e;}
+
+#Highlighter-3-top {grid-row:rHighlighter-3-top-s/rHighlighter-3-top-e; grid-column:cHighlighter-3-tb-s/cHighlighter-3-tb-e;}
+#Highlighter-3-bottom {grid-row:rHighlighter-3-bottom-s/rHighlighter-3-bottom-e; grid-column:cHighlighter-3-tb-s/cHighlighter-3-tb-e;}
+#Highlighter-3-left {grid-row:rHighlighter-3-lr-s/rHighlighter-3-lr-e; grid-column:cHighlighter-3-left-s/cHighlighter-3-left-e;}
+#Highlighter-3-right {grid-row:rHighlighter-3-lr-s/rHighlighter-3-lr-e; grid-column:cHighlighter-3-right-s/cHighlighter-3-right-e;}
 
 #cDispense-21 {display:none; grid-row:rCDispense-s/rCDispense-e; grid-column:cCDispense-21-s/cCDispense-21-e;}
 #cDispense-22 {display:none; grid-row:rCDispense-s/rCDispense-e; grid-column:cCDispense-22-s/cCDispense-22-e;}
@@ -937,8 +946,6 @@ body {
 	letter-spacing:0.1em;
 }
 
-.led {z-index:3; width:3em; height:3em;}
-
 .displayNone {display:none;}
 .displayBlock {display:block;}
 
@@ -1009,6 +1016,19 @@ body {
 
 .italic {font-style:italic;}
 
+.crossTick {
+	padding:0;
+	font-size:3.6em;
+	border-style:none;
+	border-radius:0.3em;
+	margin:0;
+/*	background-color:yellow; */
+/*	background-color:#F2E9C4; */
+	background-color:#FFFF80;
+	color:black;
+	text-align:center;
+}
+
   </style>
 </head>
 <body>
@@ -1025,7 +1045,7 @@ body {
 		
 <!--		<button id="iPuzzleNumber"><strong>No A1</strong></button> -->
 <!--		<button id="iPuzzleChangesOn"><strong>Changes on dd mmm</strong></button> -->
-		<button id="iPuzzleInfo"><strong>Puzzle no A1&emsp;-&emsp;Solve by dd mmm</strong></button>
+		<button id="iPuzzleInfo"><strong>Puzzle #A1&emsp;-&emsp;Solve by dd mmm</strong></button>
 
 		<div id="iSeparator-1"></div>
 
@@ -1094,8 +1114,7 @@ body {
 			<div id="iHighlighter-2-left" class="highlighter"></div>
 			<div id="iHighlighter-2-right" class="highlighter"></div>
 
-			<img id="demoLEDGreen" class="led" src="LEDGreen.svg" alt="Green"/>
-			<img id="demoLEDRed" class="led" src="LEDRed.svg" alt="Red"/>
+			<button id="demoCrossTick" class="crossTick"><strong>&check;</strong></button>
 
 			<button id="demoCInformation" class="cCommon cSecondary">Information</button>
 			<button id="demoCHint" class="cCommon cSecondary">Hint</button>
@@ -1184,12 +1203,16 @@ body {
 		style="
 			height:120em;
 			grid-template-rows:
-				[rDoor-s rLED-s]
+				[rDoor-s]
 				3fr
-				[rLED-e rPuzzleName-s]
+				[rPuzzleName-s]
 				7fr
 				[rPuzzleName-e]
-				3fr
+				1fr
+				[rHighlighter-3-top-s]
+				1fr
+				[rHighlighter-3-top-e rHighlighter-3-lr-s]
+				1fr
 				[rCTop-s]
 				1fr
 				[rSInformation-s]
@@ -1197,7 +1220,11 @@ body {
 				[rSInformation-e]
 				1fr
 				[rCTop-e]
-				3fr
+				1fr
+				[rHighlighter-3-lr-e rHighlighter-3-bottom-s]
+				1fr
+				[rHighlighter-3-bottom-e]
+				1fr
 				[rPanel-s]
 				3fr
 				[rDispensers-hn-s]
@@ -1227,12 +1254,16 @@ body {
 		
 		<button id="PuzzleName" class="title"><strong>Dispensers<sup>&omega;</sup></strong></button>
 
-		<img id="LEDGreen" class="led" src="LEDGreen.svg" alt="Green LED"/>
-		<img id="LEDRed" class="led" src="LEDRed.svg" alt="Red LED"/>
-
+		<button id="CrossTick" class="crossTick"><strong>&check;</strong></button>
+		
 		<button id="cInformation" class="cCommon cSecondary">Information</button>
 		<button id="cHint" class="cCommon cSecondary">Hint</button>
 		<button id="cSolution" class="cCommon cSecondary">Solution</button>
+
+		<div id="Highlighter-3-top" class="highlighter"></div>
+		<div id="Highlighter-3-bottom" class="highlighter"></div>
+		<div id="Highlighter-3-left" class="highlighter"></div>
+		<div id="Highlighter-3-right" class="highlighter"></div>
 
 		<img id="sInformation" class="spotEvenEven" src="spotEvenEven.svg" alt="Spot"/>
 		
@@ -1765,7 +1796,7 @@ class Ring {
 		this.digitRefs[segmentNum].style.visibility = `hidden`;
 	}
 }
-
+/*
 function ledFlashed(solveBiz) {solveBiz.unfreeze()}
 
 async function flashLED(ledRef, solveBiz) {
@@ -1803,6 +1834,42 @@ class LED {
 		this.redRef.style.display = `none`;
 	}
 }
+*/
+function crossTickFlashed(solveBiz) {solveBiz.unfreeze()}
+
+async function flashCrossTick(crossTickRef, solveBiz) {
+	await wait(300);
+	crossTickRef.style.display = `none`;
+	await wait(300);
+	crossTickRef.style.display = `block`;
+	await wait(300);
+	crossTickRef.style.display = `none`;
+	await wait(300);
+	crossTickRef.style.display = `block`;
+	crossTickFlashed(solveBiz)
+}
+
+class CrossTick {
+	constructor(crossTickId) {
+		this.ref = document.querySelector(crossTickId);
+	}
+	
+	showTick(solveBiz) {
+		this.ref.innerHTML = "<strong>&check;</strong>"
+		this.ref.style.display = `block`;
+		flashCrossTick(this.ref, solveBiz);
+	}
+	
+	showCross(solveBiz) {
+		this.ref.innerHTML = "<strong>&cross;</strong>"
+		this.ref.style.display = `block`;
+		flashCrossTick(this.ref, solveBiz);
+	}
+	
+	hide() {
+		this.ref.style.display = `none`;
+	}
+}
 
 class Control {
 	constructor(id, onClick) {
@@ -1812,6 +1879,8 @@ class Control {
 	//this.isEnabled = true;
 	//this.disable();
 	this.isEnabled = false;
+	this.isFrozen = false;
+	this.wasEnabledBeforeFreeze = undefined;
 	}
 
 	
@@ -1819,6 +1888,7 @@ class Control {
 		//console.log("Control.enable");
 		//console.log((this.OnClick !== null));
 		//console.log((this.OnClick === null));
+		if (this.isFrozen) return;
 		if (!this.isEnabled) {
 			//this.button.style.opacity = `1.0`;
 			if (this.OnClick !== null) this.button.addEventListener("click", this.onClick);
@@ -1830,6 +1900,7 @@ class Control {
 	disable() {
 		console.log("Control.disable");
 		//console.log((this.OnClick === null));
+		if (this.isFrozen) return;
 		if (this.isEnabled) {
 			//this.button.style.opacity = `0.5`;
 			if (this.OnClick !== null) {
@@ -1842,20 +1913,40 @@ class Control {
 	}
 
 	fade() {
+		if (this.isFrozen) return;
 		this.button.style.opacity = `0.5`;
 	}
 	
 	unfade() {
+		if (this.isFrozen) return;
 		this.button.style.opacity = `1.0`;
+	}
+	
+	freeze() {
+		if (this.isFrozen) return;
+		this.wasEnabledBeforeFreeze = this.isEnabled;
+		if (this.isEnabled) {
+			this.button.removeEventListener("click", this.onClick);
+			this.isEnabled = false;
+		}
+		this.isFrozen = true;
+	}
+	
+	unfreeze() {
+		this.isEnabled = this.wasEnabledBeforeFreeze;
+		if (this.isEnabled) {
+			if (this.OnClick !== null) this.button.addEventListener("click", this.onClick);
+		}
+		this.isFrozen = false;
 	}
 }
 
 class SolveIO {
-	constructor(controls, led) {
+	constructor(controls, crossTick) {
 	//controls
 	//an array of Control objects indexed by these names: "DispenseN", "Information", "Hint", "Reset", "Solution", "Undispense"
 	this.controls = controls;
-	this.led = led;
+	this.crossTick = crossTick;
 	}
 
 	disableAllControls() {
@@ -1903,16 +1994,18 @@ class SolveIO {
 		console.log("freezeAllControls");
 		for (let name in this.controls) {
 			console.log(name);
-			this.controls[name].disable();
+			//this.controls[name].disable();
+			this.controls[name].freeze();
 		}
 	}
 	
 	unfreezeAllControls() {
 		for (let name in this.controls) {
-			this.controls[name].enable();
+			//this.controls[name].enable();
+			this.controls[name].unfreeze();
 		}
 	}
-	
+/*	
 	hideLED() {
 		this.led.hide();
 	}
@@ -1923,6 +2016,18 @@ class SolveIO {
 	
 	showLEDRed(solveBiz) {
 		this.led.showRed(solveBiz);
+	}
+*/	
+	hideCrossTick() {
+		this.crossTick.hide();
+	}
+	
+	showTick(solveBiz) {
+		this.crossTick.showTick(solveBiz);
+	}
+	
+	showCross(solveBiz) {
+		this.crossTick.showCross(solveBiz);
 	}
 }
 
@@ -1977,18 +2082,62 @@ class SolveBiz {
 			dispenser.refresh();
 		}
 		this.dispenseSequence = [];
-		this.io.hideLED();
+		this.io.hideCrossTick();
 	}
 
+/*
 	updateLED() {
 		if (this.ring.numTilesInPlace == 9) {
 			const thisSolution = this.ring.getColourSequence().join("");
 			const correctSolution = this.puzzle.solutionColourSequence.join("");
 			this.freeze();
-			if (thisSolution === correctSolution) this.io.showLEDGreen(this); else this.io.showLEDRed(this);
+			if (thisSolution === correctSolution) this.io.showTick(this); else this.io.showCross(this);
 		}
 		else {
-			this.io.hideLED();
+			this.io.hideCrossTick();
+		}
+	}
+*/
+
+	updateDispenseControls() {
+		if (this.ring.numTilesInPlace == 9) {
+			for (let i = 1; i <= this.puzzle.numDispensers; i++) this.io.disableControls(["Dispense" + String(i)]);
+		}
+		else {
+			for (let i = 1; i <= this.puzzle.numDispensers; i++) {
+				if (this.dispensers[i].numTilesInContainer == 0) {
+					this.io.disableControls(["Dispense" + String(i)]);
+				}
+				else {
+					this.io.enableControls(["Dispense" + String(i)]);
+				}
+			}
+		}
+	}
+
+	review() {
+		this.updateDispenseControls();
+		if (this.ring.numTilesInPlace == 0) {
+			this.io.disableControls(["Reset", "Undispense"]);
+		}
+		else {
+			this.io.enableControls(["Reset", "Undispense"]);
+		}
+		if (this.ring.numTilesInPlace == 9) {
+			const thisSolution = this.ring.getColourSequence().join("");
+			const correctSolution = this.puzzle.solutionColourSequence.join("");
+			if (thisSolution === correctSolution) {
+				this.io.disableControls(["Undispense"]);
+				this.freeze();
+				this.io.showTick(this);
+			}
+			else {
+				this.freeze();
+				this.io.showCross(this);
+			}
+		}
+		else {
+			this.io.hideCrossTick();
 		}
 	}
 
@@ -2014,7 +2163,7 @@ class SolveBiz {
 	
 	hintOnClick() {
 		this.io.disableAllControls();
-		this.io.hideLED();
+		this.io.hideCrossTick();
 		if (this.ring.numTilesInPlace == 0) {
 			this.ring.addTemporaryTile(this.hintTemporaryTile, this.puzzle.hintIndex);
 			this.ring.refresh();
@@ -2086,7 +2235,7 @@ class SolveBiz {
 	
 	solutionOnClick() {
 		this.io.disableAllControls();
-		this.io.hideLED();
+		this.io.hideCrossTick();
 		if (this.ring.numTilesInPlace == 0) {
 			this.solutionShowTile(this.dispensers[this.puzzle.solutionDispenseSequence[0]]);
 			this.solutionNextIndex = 1;
@@ -2129,22 +2278,6 @@ class SolveBiz {
 		this.io.enableAllControlsExcept(["Reset", "Undispense"]);
 		//this.updateLED();
 	}
-
-	updateDispenseControls() {
-		if (this.ring.numTilesInPlace == 9) {
-			for (let i = 1; i <= this.puzzle.numDispensers; i++) this.io.disableControls(["Dispense" + String(i)]);
-		}
-		else {
-			for (let i = 1; i <= this.puzzle.numDispensers; i++) {
-				if (this.dispensers[i].numTilesInContainer == 0) {
-					this.io.disableControls(["Dispense" + String(i)]);
-				}
-				else {
-					this.io.enableControls(["Dispense" + String(i)]);
-				}
-			}
-		}
-	}
 	
 	undispenseOnClick() {
 		const tileRemoved = this.ring.removeTile();
@@ -2153,9 +2286,9 @@ class SolveBiz {
 		const dispenserNum = this.dispenseSequence.pop();
 		this.ring.refresh();
 		dispenser.refresh();
-		this.updateDispenseControls();
-		if (this.ring.numTilesInPlace == 0) this.io.disableControls(["Reset", "Undispense"]);
-		this.updateLED();
+		//this.updateDispenseControls();
+		//if (this.ring.numTilesInPlace == 0) this.io.disableControls(["Reset", "Undispense"]);
+		this.review();
 	}
 	
 	dispenseOnClick(dispenserNum) {
@@ -2165,9 +2298,9 @@ class SolveBiz {
 		this.dispenseSequence.push(dispenserNum);
 		dispenser.refresh();
 		this.ring.refresh();
-		this.updateDispenseControls();
-		this.io.enableControls(["Reset", "Undispense"]);
-		this.updateLED();
+		//this.updateDispenseControls();
+		//this.io.enableControls(["Reset", "Undispense"]);
+		this.review();
 	}
 }
 
@@ -2269,9 +2402,11 @@ for (let i = 1; i <= punterPuzzle.numDispensers; i++) {
 	punterControls["Dispense" + String(i)] = new Control(dispenseId, punterDispenseOnClicks[i]);
 }
 
-const punterLED = new LED("#LEDGreen", "#LEDRed");
+//const punterLED = new LED("#LEDGreen", "#LEDRed");
+const punterCrossTick = new CrossTick("#CrossTick");
 
-const punterSolveIO = new SolveIO(punterControls, punterLED);	
+//const punterSolveIO = new SolveIO(punterControls, punterLED);	
+const punterSolveIO = new SolveIO(punterControls, punterCrossTick);	
 const punterSolveBiz = new SolveBiz(punterPuzzle, punterDispensers, punterRing, punterSolveIO);
 punterSolveBiz.wake();
 //disable all the controls while the preamble runs
@@ -2352,9 +2487,10 @@ demoControls["Dispense1"] = new Control("#demoCDispense-1", null);
 demoControls["Dispense2"] = new Control("#demoCDispense-2", null);
 demoControls["Dispense3"] = new Control("#demoCDispense-3", null);
 
-const demoLED = new LED("#demoLEDGreen", "#demoLEDRed");
+//const demoLED = new LED("#demoLEDGreen", "#demoLEDRed");
+const demoCrossTick = new CrossTick("#demoCrossTick");
 
-const demoSolveIO = new SolveIO(demoControls, demoLED);	
+const demoSolveIO = new SolveIO(demoControls, demoCrossTick);	
 const demoSolveBiz = new SolveBiz(demoPuzzle, demoDispensers, demoRing, demoSolveIO);
 //demoControlBack.enable();
 //demoControlDemo.enable();
@@ -2624,6 +2760,12 @@ async function performPreamble() {
 	const highlighter2LeftRef = document.querySelector("#iHighlighter-2-left");
 	const highlighter2RightRef = document.querySelector("#iHighlighter-2-right");
 
+	const highlighter3TopRef = document.querySelector("#Highlighter-3-top");
+	const highlighter3BottomRef = document.querySelector("#Highlighter-3-bottom");
+	const highlighter3LeftRef = document.querySelector("#Highlighter-3-left");
+	const highlighter3RightRef = document.querySelector("#Highlighter-3-right");
+
+/*
 	await wait(2000);
 	
 	for (let opacity of spotFadeSequence) {
@@ -2633,6 +2775,15 @@ async function performPreamble() {
 	
 	await wait(700);
 	hideSpot(spotInformationRef);
+	
+	informationRule.style.setProperty("display", `grid`);
+	informationRule.style.setProperty("z-index", `3`);
+
+	await wait(2000);
+*/
+
+	demoControlBack.freeze();
+	demoControlDemo.freeze();
 	
 	informationRule.style.setProperty("display", `grid`);
 	informationRule.style.setProperty("z-index", `3`);
@@ -2667,6 +2818,24 @@ async function performPreamble() {
 
 	await wait(1000);
 
+	informationRule.style.setProperty("z-index", `1`);
+	informationRule.style.setProperty("display", `none`);
+
+	await wait(1000);
+
+	highlighter3TopRef.style.display = `block`;
+	highlighter3BottomRef.style.display = `block`;
+	highlighter3LeftRef.style.display = `block`;
+	highlighter3RightRef.style.display = `block`;
+
+	await wait(1500);
+
+	highlighter3TopRef.style.display = `none`;
+	highlighter3BottomRef.style.display = `none`;
+	highlighter3LeftRef.style.display = `none`;
+	highlighter3RightRef.style.display = `none`;
+	
+/*
 	for (let opacity of spotFadeSequence) {
 		showSpot(spotBackRef, opacity);
 		await wait(100);
@@ -2674,9 +2843,10 @@ async function performPreamble() {
 	
 	await wait(700);
 	hideSpot(spotBackRef);
-	
-	informationRule.style.setProperty("z-index", `1`);
-	informationRule.style.setProperty("display", `none`);
+*/
+
+	demoControlBack.unfreeze();
+	demoControlDemo.unfreeze();
 
 	punterSolveBiz.unfreeze();
 }
