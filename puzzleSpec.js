@@ -1,4 +1,4 @@
-
+/*
 let punterPuzzleSpec = {
 	number: "B2",
 	solveBy: "7 Feb",
@@ -8,6 +8,18 @@ let punterPuzzleSpec = {
 	hintSpec: ["blue", 5],
 	solutionDispenseSequence: [3, 3, 3, 3, 3, 2, 2, 1, 3],
 	solutionColourSequence: ["green", "blue", "black", "green", "blue", "green", "black", "green", "blue"]
+};
+*/
+
+let punterPuzzleSpec = {
+	number: "A2",
+	solveBy: "14 Feb",
+	dispenserSpec: [undefined, "pqppqq", "rpq", "r"],
+	ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+	colourSpec: ["orange", "black", "blue"],
+	hintSpec: ["orange", 8],
+	solutionDispenseSequence: [1, 3, 1, 1, 2, 1, 1, 2, 2],
+	solutionColourSequence: ["black", "blue", "black", "orange", "black", "orange", "black", "orange", "blue"]
 };
 
 
@@ -32,18 +44,6 @@ let punterPuzzleSpec = {
 	dispenserSpec: [undefined, "ppqrq", "rpqr"],
 	ringSpec: [-1, -4, 7, -2, 5, 8, -3, 6, 9],
 	colourSpec: ["black", "green", "orange"],
-	hintSpec: ["green", 6],
-	solutionDispenseSequence: [3, 2, 3, 3, 3, 3, 1, 3, 3],
-	solutionColourSequence: ["black", "green", "black", "orange", "blue", "green", "blue", "green", "blue"]
-};
-*/
-/*
-let punterPuzzleSpec = {
-	number: "A2",
-	solveBy: "28 Jan",
-	dispenserSpec: [undefined, "pqppqq", "rpq", "r"],
-	ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-	colourSpec: ["orange", "black", "blue"],
 	hintSpec: ["green", 6],
 	solutionDispenseSequence: [3, 2, 3, 3, 3, 3, 1, 3, 3],
 	solutionColourSequence: ["black", "green", "black", "orange", "blue", "green", "blue", "green", "blue"]
