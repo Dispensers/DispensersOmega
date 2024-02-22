@@ -22,7 +22,7 @@ let punterPuzzleSpec = {
 	solutionColourSequence: ["black", "blue", "black", "orange", "black", "orange", "black", "orange", "blue"]
 };
 */
-
+/*
 let punterPuzzleSpec = {
 	number: "F1",
 	solveBy: "21 Feb",
@@ -33,19 +33,19 @@ let punterPuzzleSpec = {
 	solutionDispenseSequence: [1, 2, 2, 2, 2, 1, 2, 1, 1],
 	solutionColourSequence: ["black", "green", "black", "blue", "orange", "black", "orange", "black", "green"]
 };
+*/
 
-/*
 let punterPuzzleSpec = {
 	number: "A4",
 	solveBy: "28 Feb",
 	dispenserSpec: [undefined, "ppqrr", "p", "pqq"],
 	ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 	colourSpec: ["blue", "black", "green"],
-	hintSpec: ["orange", 8],
+	hintSpec: ["black", 4],
 	solutionDispenseSequence: [1, 2, 1, 1, 1, 3, 1, 3, 3],
 	solutionColourSequence: ["green", "blue", "green", "black", "blue", "black", "blue", "black", "blue"]
 };
-*/
+
 /*
 let punterPuzzleSpec = {
 	number: "B4",
