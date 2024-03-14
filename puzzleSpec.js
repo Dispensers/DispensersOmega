@@ -58,7 +58,7 @@ let punterPuzzleSpec = {
 	solutionColourSequence: ["blue", "pink", "green", "black", "green", "black", "green", "black", "orange"]
 };
 */
-
+/*
 let punterPuzzleSpec = {
 	number: "F2",
 	solveBy: "13 Mar",
@@ -69,19 +69,19 @@ let punterPuzzleSpec = {
 	solutionDispenseSequence: [1, 2, 3, 3, 3, 1, 3, 1, 1],
 	solutionColourSequence: ["green", "blue", "green", "orange", "blue", "green", "blue", "green", "blue"]
 };
+*/
 
-/*
 let punterPuzzleSpec = {
 	number: "A6",
 	solveBy: "20 Mar",
 	dispenserSpec: [undefined, "p", "rq", "rppqqss"],
 	ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 	colourSpec: ["black", "blue", "green", "orange"],
-	hintSpec: ["orange", 8],
+	hintSpec: ["black", 7],
 	solutionDispenseSequence: [3, 2, 3, 3, 1, 3, 3, 2, 3],
 	solutionColourSequence: ["orange", "blue", "orange", "blue", "black", "blue", "black", "green", "black"]
 };
-*/
+
 /*
 let punterPuzzleSpec = {
 	number: "E1",
