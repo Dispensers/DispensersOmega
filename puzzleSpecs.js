@@ -1,4 +1,95 @@
 let puzzleSpecs = [
+/*	
+	{
+		number: "D1",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "p", "pt", "qpqrs", "p"],
+		ringSpec: [-3, 7, -2, 6, -1, 5, 9, -4, 8],
+		colourSpec: ["blue", "orange", "green", "black", "pink"],
+		hintSpec: ["orange", 5],
+		solutionDispenseSequence: [3, 3, 3, 2, 3, 2, 1, 4, 3],
+		solutionColourSequence: ["orange", "blue", "green", "blue", "black", "blue", "orange", "pink", "blue"]
+	},
+	
+	{
+		number: "B1",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "ppqrq", "rpqr"],
+		ringSpec: [-1, -4, 7, -2, 5, 8, -3, 6, 9],
+		colourSpec: ["blue", "green", "orange"],
+		hintSpec: ["black", 8],
+		solutionDispenseSequence: [1, 1, 1, 2, 2, 1, 1, 2, 2],
+		solutionColourSequence: ["green", "orange", "blue", "orange", "green", "blue", "green", "blue", "orange"]
+	},
+
+	{
+		number: "E2",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "q", "rprpq", "rpqpq"],
+		ringSpec: [-1, -2, 7, -3, -4, 8, 5, 6, 9],
+		colourSpec: ["black", "orange", "green"],
+		hintSpec: ["orange", 5],
+		solutionDispenseSequence: [2, 2, 2, 3, 1, 3, 3, 2, 2],
+		solutionColourSequence: ["orange", "black", "orange", "green", "orange", "black", "orange", "black", "green"]
+	},
+	
+	{
+		number: "A3",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "prtr", "ppqqs"],
+		ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+		colourSpec: ["black", "blue", "orange", "green", "pink"],
+		hintSpec: ["black", 7],
+		solutionDispenseSequence: [2, 2, 1, 2, 2, 1, 2, 1, 1],
+		solutionColourSequence: ["green", "blue", "orange", "blue", "black", "pink", "black", "orange", "black"]
+	},	
+
+	{
+		number: "F4",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "rpprq", "pqpqs"],
+		ringSpec: [8, 6, -4, -2, 9, -1, -3, 5, 7],
+		colourSpec: ["green", "black", "orange", "blue"],
+		hintSpec: ["blue", 2],
+		solutionDispenseSequence: [1, 1, 1, 2, 2, 1, 2, 2, 2],
+		solutionColourSequence: ["black", "green", "blue", "orange", "green", "black", "green", "black", "green"]
+	},
+	
+	{
+		number: "A5",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "pqqpp", "rqp", "r"],
+		ringSpec: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+		colourSpec: ["orange", "blue", "green"],
+		hintSpec: ["black", 7],
+		solutionDispenseSequence: [1, 3, 1, 1, 2, 1, 1, 2, 2],
+		solutionColourSequence: ["orange", "green", "orange", "blue", "orange", "blue", "orange", "blue", "green"]
+	},	
+	
+	{
+		number: "G1",
+		publishedOn: "dd Mmm 24",
+		dispenserSpec: [undefined, "psq", "psprqr"],
+		ringSpec: [9, 7, 5, -3, -1, 8, 6, -4, -2],
+		colourSpec: ["black", "orange", "green", "blue"],
+		hintSpec: ["orange", 5],
+		solutionDispenseSequence: [2, 2, 1, 2, 2, 2, 1, 2, 1],
+		solutionColourSequence: ["black", "blue", "black", "orange", "green", "black", "blue", "green", "orange"]
+	},	
+*/	
+	{
+		number: "B5",
+		publishedOn: "5 Jun 24",
+		dispenserSpec: [undefined, "pq", "qr", "qrpppp"],
+		ringSpec: [-1, -4, 7, -2, 5, 8, -3, 6, 9],
+		colourSpec: ["blue", "green", "orange"],
+		hintSpec: ["blue", 8],
+		solutionDispenseSequence: [3, 2, 1, 2, 3, 3, 3, 3, 3],
+		solutionColourSequence: ["blue", "green", "blue", "orange", "blue", "orange", "green", "blue", "green"]
+	},
+
+//--------------------------------------------------------------------------------------------------------------------
+
 	{
 		number: "E1",
 		publishedOn: "21 Mar 24",
