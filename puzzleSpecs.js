@@ -75,8 +75,7 @@ let puzzleSpecs = [
 		hintSpec: ["black", 3],
 		solutionDispenseSequence: [2, 2, 1, 2, 2, 2, 1, 2, 1],
 		solutionColourSequence: ["black", "blue", "black", "orange", "green", "black", "blue", "green", "orange"]
-	},	
-	
+	},		
 	{
 		number: "B5",
 		publishedOn: "5 Jun 24",
