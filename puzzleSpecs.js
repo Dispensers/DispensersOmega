@@ -10,18 +10,17 @@ let puzzleSpecs = [
 		solutionDispenseSequence: [3, 3, 3, 2, 3, 2, 1, 4, 3],
 		solutionColourSequence: ["orange", "blue", "green", "blue", "black", "blue", "orange", "pink", "blue"]
 	},
-	
+*/	
 	{
 		number: "B1",
-		publishedOn: "dd Mmm 24",
+		publishedOn: "17 Jul 24",
 		dispenserSpec: [undefined, "ppqrq", "rpqr"],
 		ringSpec: [-1, -4, 7, -2, 5, 8, -3, 6, 9],
 		colourSpec: ["blue", "green", "orange"],
-		hintSpec: ["black", 8],
+		hintSpec: ["green", 5],
 		solutionDispenseSequence: [1, 1, 1, 2, 2, 1, 1, 2, 2],
 		solutionColourSequence: ["green", "orange", "blue", "orange", "green", "blue", "green", "blue", "orange"]
 	},
-*/
 	{
 		number: "E2",
 		publishedOn: "10 Jul 24",
