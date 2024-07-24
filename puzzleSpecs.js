@@ -1,16 +1,14 @@
-let puzzleSpecs = [
-/*	
+let puzzleSpecs = [	
 	{
 		number: "D1",
-		publishedOn: "dd Mmm 24",
+		publishedOn: "24 Jul 24",
 		dispenserSpec: [undefined, "p", "pt", "qpqrs", "p"],
 		ringSpec: [-3, 7, -2, 6, -1, 5, 9, -4, 8],
 		colourSpec: ["blue", "orange", "green", "black", "pink"],
-		hintSpec: ["orange", 5],
+		hintSpec: ["blue", 2],
 		solutionDispenseSequence: [3, 3, 3, 2, 3, 2, 1, 4, 3],
 		solutionColourSequence: ["orange", "blue", "green", "blue", "black", "blue", "orange", "pink", "blue"]
-	},
-*/	
+	},	
 	{
 		number: "B1",
 		publishedOn: "17 Jul 24",
